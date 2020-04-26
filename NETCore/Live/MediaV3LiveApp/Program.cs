@@ -80,7 +80,7 @@ namespace LiveSample
                 MediaService mediaService = await client.Mediaservices.GetAsync(config.ResourceGroup, config.AccountName);
 
                 #region CreateLiveEvent
-                Console.WriteLine($"Creating a live event named {liveEventName}");
+                Console.WriteLine($"Creating a live event named {demolive2604}");
                 Console.WriteLine();
 
                 // Note: When creating a LiveEvent, you can specify allowed IP addresses in one of the following formats:                 
@@ -160,7 +160,7 @@ namespace LiveSample
                 #region GetIngestUrl
                 string ingestUrl = liveEvent.Input.Endpoints.First().Url;
                 Console.WriteLine($"The ingest url to configure the on premise encoder with is:");
-                Console.WriteLine($"\t{ingestUrl}");
+                Console.WriteLine($"\t{rtmp://demolive2604-livedemo-inso.channel.media.azure.net:1935/live/8a1c976b16ef473f9cb720109ddd601f}");
                 Console.WriteLine();
                 #endregion
 
